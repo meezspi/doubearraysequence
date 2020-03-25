@@ -1,0 +1,50 @@
+sequence s
+capacity = 16
+length = 10
+current element = 10.0
+elements: 1.0 2.0 3.0 4.0 5.0 6.0 7.0 8.0 9.0 10.0 
+
+sequence t after adding 11.0 and 12.0 to s
+capacity = 16
+length = 12
+current element = 12.0
+elements: 1.0 2.0 3.0 4.0 5.0 11.0 12.0 6.0 7.0 8.0 9.0 10.0 
+
+sequence u after removing 11.0 and 12.0 from t
+capacity = 16
+length = 10
+current element = 6.0
+elements: 1.0 2.0 3.0 4.0 5.0 6.0 7.0 8.0 9.0 10.0 
+
+sequence v after adding 11.0 and 12.0 to s
+capacity = 16
+length = 12
+current element = 12.0
+elements: 1.0 2.0 3.0 4.0 12.0 11.0 5.0 6.0 7.0 8.0 9.0 10.0 
+
+sequence v after trim
+capacity = 12
+length = 12
+current element = 12.0
+elements: 1.0 2.0 3.0 4.0 12.0 11.0 5.0 6.0 7.0 8.0 9.0 10.0 
+
+sequence v = v + s
+capacity = 22
+length = 22
+current element = 12.0
+elements: 1.0 2.0 3.0 4.0 12.0 11.0 5.0 6.0 7.0 8.0 9.0 10.0 1.0 2.0 3.0 4.0 5.0 6.0 7.0 8.0 9.0 10.0 
+
+sequence w = s + t
+capacity = 22
+length = 22
+There is no current element
+elements: 1.0 2.0 3.0 4.0 5.0 6.0 7.0 8.0 9.0 10.0 1.0 2.0 3.0 4.0 5.0 11.0 12.0 6.0 7.0 8.0 9.0 10.0 
+
+sequence x is empty
+capacity = 10
+length = 0
+There is no current element
+elements: 
+
+Trying to get anything from x causes an exception
+
